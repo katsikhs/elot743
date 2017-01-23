@@ -15,7 +15,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
-<script type="text/javascript" src="http://helppost.gr/wp-content/script-our/converter-elot-743.js"></script>
+<script type="text/javascript" src="./elot743.js"></script>
 <h2><textarea name="input" id="input"></textarea></h2>
 <h2><textarea id="output"></textarea></h2>
 

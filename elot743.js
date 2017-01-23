@@ -34,6 +34,8 @@ window.onload = function() {
           {greek:'εύ', fivi:1},
           {greek:'ηυ', fivi:1},
           {greek:'ηύ', fivi:1},
+          {greek:'ευα', fiva:1},
+          {greek:'ευά', fiva:1},
           {greek:'ντ', greeklish:'nt'},
           {greek:'μπ', bi:1},
           {greek:'τσ', greeklish:'ts'},
@@ -79,6 +81,11 @@ window.onload = function() {
             var c1 = replacements[$0.charAt(0).toLowerCase()].greeklish
             var c2 = viSet[text.charAt(index + 2).toLowerCase()] ? 'v' : 'f'
             return fixCase(c1 + c2, $0)
+          } else if (replacement.fiva) {
+            var c1 = replacements[$0.charAt(0).toLowerCase()].greeklish
+            var c2 = replacements[$0.charAt(1).toLowerCase()].greeklish
+            var c3 = replacements[$0.charAt(2).toLowerCase()].greeklish
+            return fixCase(c1 + c2 + c3, $0)
           } else {
             return fixCase(replacement.greeklish, $0 + text.charAt(index + $0.length))
           }
