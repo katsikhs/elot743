@@ -79,7 +79,7 @@ window.onload = function() {
           } else if (replacement.eva) {
             var c1 = replacements[$0.charAt(0).toLowerCase()].greeklish
             var c2 = viSet[text.charAt(index + 2).toLowerCase()] ? 'f' : 'v'
-            var c3 = replacements[$0.charAt(2).toLowerCase()].greeklish
+            var c3 = replacements[$0.charAt(1).toLowerCase()].greeklish
             return fixCase(c1 + c2 + c3, $0)
           } else if (replacement.fivi) {
             var c1 = replacements[$0.charAt(0).toLowerCase()].greeklish
