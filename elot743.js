@@ -77,7 +77,7 @@ window.onload = function() {
             var bi = (greekSet[text.charAt(index - 1).toLowerCase()] && greekSet[text.charAt(index + 2).toLowerCase()]) ? 'mp' : 'b'
             return fixCase(bi, $0)
             else if (replacement.eva) {
-            var eva = (greekSet[text.charAt(index - 1).toLowerCase()] && greekSet[text.charAt(index + 2).toLowerCase()]) ? 'mp' : 'b'
+            var eva = (greekSet[text.charAt(index - 1).toLowerCase()] && greekSet[text.charAt(index + 2).toLowerCase()]) ? 'f' : 'v'
             return fixCase(eva, $0)
           } else if (replacement.fivi) {
             var c1 = replacements[$0.charAt(0).toLowerCase()].greeklish
