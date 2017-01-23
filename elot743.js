@@ -28,6 +28,7 @@ window.onload = function() {
           {greek:'ού', greeklish:'ou'},
           {greek:'ει', greeklish:'ei'},
           {greek:'εί', greeklish:'ei'},
+          {greek:'ευά', eva:1},
           {greek:'αυ', fivi:1},
           {greek:'αύ', fivi:1},
           {greek:'ευ', fivi:1},
@@ -75,6 +76,9 @@ window.onload = function() {
           if (replacement.bi) {
             var bi = (greekSet[text.charAt(index - 1).toLowerCase()] && greekSet[text.charAt(index + 2).toLowerCase()]) ? 'mp' : 'b'
             return fixCase(bi, $0)
+            else if (replacement.eva) {
+            var eva = (greekSet[text.charAt(index - 1).toLowerCase()] && greekSet[text.charAt(index + 2).toLowerCase()]) ? 'mp' : 'b'
+            return fixCase(eva, $0)
           } else if (replacement.fivi) {
             var c1 = replacements[$0.charAt(0).toLowerCase()].greeklish
             var c2 = viSet[text.charAt(index + 2).toLowerCase()] ? 'v' : 'f'
